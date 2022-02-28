@@ -1,0 +1,84 @@
+:root {
+    --one: #3498db;
+    --two: #2ecc71;
+    --three: #e74c3c;
+    --four: #f1c40f;
+    --five: #e67e22;
+    --six: #16a085;
+    --seven: #9b59b6;
+    --eight: #95a5a6;
+    --bomb: hsl(0, 78%, 40%);
+}
+
+.cell {
+    background-color: dodgerblue;
+    color: #eee;
+    width: 48px;
+    height: 48px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    transition: 0.05s;
+    font-weight: bold;
+}
+
+.cell:hover {
+    /* background-color: #707070; */
+    transform: scale(1.1);
+}
+
+.cell:active {
+    /* background-color: #555555; */
+    transform: scale(1);
+}
+
+.c0 {
+    background-color: #363636;
+    /* background-color: #585858; */
+}
+
+.c1 {
+    color: var(--one);
+    border: var(--one) solid 4px;
+}
+
+.c2 {
+    color: var(--two);
+    border: var(--two) solid 4px;
+}
+
+.c3 {
+    color: var(--three);
+    border: var(--three) solid 4px;
+}
+
+.c4 {
+    color: var(--four);
+    border: var(--four) solid 4px;
+}
+
+.c5 {
+    color: var(--five);
+    border: var(--five) solid 4px;
+}
+
+.c6 {
+    color: var(--six);
+    border: var(--six) solid 4px;
+}
+
+.c7 {
+    color: var(--seven);
+    border: var(--seven) solid 4px;
+}
+
+.c8 {
+    color: var(--eight);
+    border: var(--eight) solid 4px;
+}
+
+.bomb {
+    color: var(--bomb);
+    border: var(--bomb) solid 4px;
+}

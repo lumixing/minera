@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Minera</title>
+        <link rel="stylesheet" href="pre.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link id="theme-css" rel="stylesheet" href="./themes/filled.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body class="flex-c">
+        <div id="menu-container">
+            <div class="flex-c flex-col">
+                <div class="logo flex gap-m">
+                    <button class="cell c0">M</button>
+                    <button class="cell c1 c0">1</button>
+                    <button class="cell c0">N</button>
+                    <button class="cell c3 c0">3</button>
+                    <button class="cell c0">R</button>
+                    <button class="cell c4 c0">4</button>
+                </div>
+
+                <div class="input flex-c gap-s">
+                    <!-- <label for="width">width</label> -->
+                    <input type="number" id="width" placeholder="X" value="9" />
+                    <span class="between">x</span>
+                    <input type="number" id="height" placeholder="Y" value="9" />
+                    <span class="between">WITH</span>
+                    <input type="number" id="mines" placeholder="💥" value="10" />
+                    <button class="cell c0 bomb flex-c">💣</button>
+                </div>
+
+                <div class="buttons flex-c flex-col gap-m">
+                    <button id="play">PLAY</button>
+                    <button id="settings">SETTINGS</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="settings-container">
+            <div class="flex-c flex-col">
+                <div class="logo flex gap-m">
+                    <button class="cell c0 c5">5</button>
+                    <button class="cell c0 c3">3</button>
+                    <button class="cell c0">T</button>
+                    <button class="cell c0">T</button>
+                    <button class="cell c0 c1">1</button>
+                    <button class="cell c0">N</button>
+                    <button class="cell c0">G</button>
+                    <button class="cell c0 c5">5</button>
+                </div>
+
+                <div class="input flex-c gap-s">
+                    <div class="form">
+                        <label for="font-size">FONT SIZE</label>
+                        <input id="theme-font-size" name="font-size" type="number" min="1" value="24" />
+                    </div>
+                </div>
+
+                <div class="buttons flex-c flex-col gap-m">
+                    <button id="back">BACK</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-container">
+            <div id="board" oncontextmenu="return false;"></div>
+
+            <div class="modal">
+                <div class="flex-c h-100p">
+                    <div class="modal-container flex-c flex-col gap-l">
+                        <span id="modal-message">default modal message</span>
+                        <button id="close">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
